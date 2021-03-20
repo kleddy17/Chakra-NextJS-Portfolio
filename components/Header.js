@@ -1,42 +1,42 @@
 import React from 'react'
 import {
     Box,
-    HStack,
-    useColorMode,
-    Center,
-    Flex,
     Heading,
-    Text,
-  
-    Image,
-    
   } from "@chakra-ui/react";
 
 const Header = () => {
+
+
+    const textColor = { light: "black", dark: "gray.100" };
+
+
     return (
        <>
        <Box
-    //    border="2px solid rgba(212, 175, 53, 0.5)" 
        width="25%" 
        height="25vh" 
        marginLeft="37%"
        mt="18vh"
-       justifyContent="center" 
-       alignContent="center"
-       alignItems="center" 
        textAlign="center" 
-       color="pink.500"
        fontWeight="semibold"
        letterSpacing="wide"
-       fontSize="xs"
        textTransform="uppercase"
+        >
+           <Heading
+                as = "h1" 
+                size = "3xl"
             >
-           <Heading>
-               Kristi Eddy
-               <Text>
-                   Software Engineer
-               </Text>
+            Kristi Eddy  
            </Heading>
+
+            <Heading
+                as= "h2"
+                size = "lg"
+                w = "100%"
+                >
+            Software Engineer
+            </Heading>
+
        </Box>
        </>
     )

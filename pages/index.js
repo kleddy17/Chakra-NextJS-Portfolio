@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Projects from '../components/Projects'
 import Header from '../components/Header'
+import Skills from '../components/Skills'
+import  Navbar  from "../components/Navbar";
 
 import {
   Box,
@@ -30,19 +32,17 @@ export default function Index() {
   };
 
   return (
-    <Box>
+    // <Box>
     <Box
     bgPosition="center" bgSize="cover" minH="100%" minW="32vw" w="100vw" h="auto" position="fixed" overflowX="scroll" top="0" right="0"
-    bgImage= "url('./galaxy2.jpg')"
+    bgImage= "url('./galaxy.jpg')"
     >
-    <Box>
-    <Header/>
-    </Box>
- 
-  <Projects/>
-
-  
+         <Navbar />
+      <Header/>
+      
+      <Projects/>
+      <Skills/>
   </Box> 
-  </Box>
+  // </Box>
   )
 }

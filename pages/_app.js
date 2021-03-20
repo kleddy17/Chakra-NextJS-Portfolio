@@ -2,6 +2,9 @@ import customTheme from '../styles/theme'
 import { Box, ChakraProvider, VStack, extendTheme, ColorModeProvider } from '@chakra-ui/react';
 import Navbar from '../components/Navbar'
 import Header from '../components/Header'
+import Skills from '../components/Skills'
+
+import Projects from '../components/Projects'
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css' // Import the CSS
@@ -13,7 +16,7 @@ function MyApp({ Component, pageProps }) {
   
   <ChakraProvider >
   {/* <Fonts /> */}
-   <Navbar />
+   {/* <Navbar /> */}
    <Box>
    <Component {...pageProps} />
    </Box>

@@ -2,8 +2,6 @@ import React from "react";
 import Link from "next/link";
 
 import {
-    Box,
-    HStack,
     useColorMode,
     Center,
     Flex,
@@ -12,34 +10,17 @@ import {
     IconButton,
     Image,
     Icon,
-    Button,
-    Spacer, 
 
   } from "@chakra-ui/react";
 
-  import {
-    Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-    MenuItemOption,
-    MenuGroup,
-    MenuOptionGroup,
-    MenuIcon,
-    MenuCommand,
-    MenuDivider,
-  } from "@chakra-ui/react";
 
 import { useRouter } from 'next/router'
 import DarkModeSwitch from "./DarkModeSwitch";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
-
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
   
-  const Navbar = () => {
+
+const Navbar = () => {
     const router = useRouter();
 
     const bgColor = {
@@ -69,8 +50,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
       <Flex
         as="nav"
-        align="center"
-        justify="space-between"
         wrap="wrap"
         padding=".5rem"
         zIndex="1"
@@ -79,28 +58,34 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
         bgImage="url(./navib.png)"
         bgSize="100vh"
         position="sticky"
-      >
-        <Link 
-          href="https://docs.google.com/document/d/1f0OYxM6fODJtaYysmK_7UnyT_XMPvZhKlfQhas4T20E/edit">
-          <a>Resume</a>
-        </Link>
+        justify = "space-between"
+        align = "center"
 
-        <DarkModeSwitch/>
-      
-        <Icon 
+      >
+
+          <Link 
+            href="https://docs.google.com/document/d/1f0OYxM6fODJtaYysmK_7UnyT_XMPvZhKlfQhas4T20E/edit">
+            <Text
+              >
+              Resume
+            </Text>
+          </Link>
+   
+          <DarkModeSwitch/>
+
+          <Icon 
           as ={FaGithub}
           onClick={gitHub}
-        />
-        <Icon 
+          width = "2em"
+          height = "2em"
+          />
+
+          <Icon 
           as ={FaLinkedin}
           onClick={linkedIn}
-        />
-       
-        
-      
-       
-  
-
+          width = "2em"
+          height = "2em"
+          />
       </Flex>
          
       )
