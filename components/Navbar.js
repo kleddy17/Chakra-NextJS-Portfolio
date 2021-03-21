@@ -66,7 +66,7 @@ const Navbar = () => {
           <Link 
             href="https://docs.google.com/document/d/1f0OYxM6fODJtaYysmK_7UnyT_XMPvZhKlfQhas4T20E/edit">
             <Text
-              >
+             size ="xl">
               Resume
             </Text>
           </Link>

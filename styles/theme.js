@@ -3,11 +3,7 @@ import {theme as chakraTheme} from "@chakra-ui/react"
 import {createBreakpoints} from "@chakra-ui/theme-tools"
 
 
-const fonts = {
-    ...chakraTheme.fonts,
-    // // body: 'DotGothic16, inter, sans-serif',
-    // heading: 'DotGothic16, inter, sans-serif'
-}
+
 
 const breakpoints = createBreakpoints({
 

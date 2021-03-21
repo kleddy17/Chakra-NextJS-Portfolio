@@ -3,6 +3,7 @@ import Projects from '../components/Projects'
 import Header from '../components/Header'
 import Skills from '../components/Skills'
 import  Navbar  from "../components/Navbar";
+import Aboutme from '../components/Aboutme'
 
 import {
   Box,
@@ -34,14 +35,15 @@ export default function Index() {
   return (
     // <Box>
     <Box
-    bgPosition="center" bgSize="cover" minH="100%" minW="32vw" w="100vw" h="auto" position="fixed" overflowX="scroll" top="0" right="0"
-    bgImage= "url('./galaxy.jpg')"
+    zIndex="-1"  bgPosition="center" bgSize="cover" minH="100%" minW="32vw" w="100vw" h="auto" position="fixed" overflowX="scroll" top="0" right="0"
+    bgImage= "url('./plant.jpg')"
     >
-         <Navbar />
-      <Header/>
-      
-      <Projects/>
-      <Skills/>
+    <Navbar />
+    <Header/>
+    <Aboutme/>
+    <Skills/>
+    <Projects/>
+     
   </Box> 
   // </Box>
   )

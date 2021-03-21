@@ -6,6 +6,7 @@ import {
     Box, 
     Image,
     VStack,
+    HStack,
     Text
 } from "@chakra-ui/react"
 
@@ -26,7 +27,19 @@ const Projects = ({children}) => {
       }
     return (
    
-    <VStack display="flex" flexDirection = "row" justifyContent="space-between" align = "flex-end" my="100px">
+    <Flex
+    flexDirection = "column" 
+    align = "flex-end"
+    my= "38vh"
+    align = "center" 
+    
+    h="auto"
+    position="fixed"
+    overflowX="scroll"
+    top="0"
+    right="0"
+
+    >
 
         <Image
         onClick={witchLink}
@@ -44,8 +57,6 @@ const Projects = ({children}) => {
         boxSize="150px"
         />
    
-
-
         <Image
         onClick={findCareerLink}
         src='https://i.postimg.cc/cCzTyBXD/a2390cc5-18a7-48e0-af19-2d4a76be7ad9-200x200.png'
@@ -53,7 +64,7 @@ const Projects = ({children}) => {
         boxSize="150px"
         />
 
-        </VStack>
+        </Flex>
 
        
 
