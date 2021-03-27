@@ -8,20 +8,10 @@ import Aboutme from '../components/Aboutme'
 import {
   Box,
   VStack,
-  useColorMode,
-  Center,
-  Flex,
-  Heading,
-  Text,
-  IconButton,
-  Image,
-  Icon,
-  Button,
-  Stack,
-  Spacer
+ 
   
 } from "@chakra-ui/react";
-import DarkModeSwitch from '../components/DarkModeSwitch'
+
 
 
 
@@ -34,33 +24,48 @@ export default function Index() {
 
   return (
     <Box 
-    overflowX = "scroll"
-    h="200vh"
-    >
-
-<VStack>
-    <Box
     bgPosition="center" 
     bgSize="cover" 
     w="100vw" 
     minH="100%"
-    position="absolute"  
+    position="absolute" 
+    overflowX = "scroll"
+    h="200vh"
     bgImage= "url('./plant.jpg')"
-    
-    
     >
+
+<VStack  spacing = "8em">
+    <Box 
+    height = "50%"
+    width = "100%"
+    > 
+      <Header/>
+       </Box>
     
-    <Header/>
-    
+  
+   <Box
+    height = "50%"
+    width = "100%"
+   >
     <Aboutme/>
- 
+    </Box>
+
+    <Box
+     height = "50%"
+     width = "100%"
+    >
     <Projects/>
- 
+    </Box>
+
+    <Box
+     height = "50%"
+     width = "100%">
     <Skills/> 
+    </Box>
     
-  </Box> 
+ 
 
   </VStack> 
-   </Box>
+    </Box>
   )
 }
