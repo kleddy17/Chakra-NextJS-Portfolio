@@ -2,6 +2,7 @@ import React from 'react'
 import {
     Box,
     Heading,
+    Center
   } from "@chakra-ui/react";
 
 const Header = () => {
@@ -12,10 +13,10 @@ const Header = () => {
 
     return (
        <>
+       <Center>
        <Box
-       width="25%" 
+       width="50%" 
        height="25vh" 
-       marginLeft="37%"
        mt="18vh"
        textAlign="center" 
        fontWeight="semibold"
@@ -32,12 +33,13 @@ const Header = () => {
             <Heading
                 as= "h2"
                 size = "lg"
-                w = "100%"
+                // w = "100%"
                 >
             Software Engineer
             </Heading>
 
        </Box>
+       </Center>
        </>
     )
 }

@@ -65,8 +65,19 @@ const Navbar = () => {
 
           <Link 
             href="https://docs.google.com/document/d/1f0OYxM6fODJtaYysmK_7UnyT_XMPvZhKlfQhas4T20E/edit">
+              
             <Text
-             size ="xl">
+             size ="xl"
+             as="button"
+             bg="gray.500"
+             py={2}
+             px={4}
+             ml={3}
+             rounded="md"
+             fontWeight="semibold"
+             color="black"
+             _hover={{ bg: "white" }}
+             _focus={{ boxShadow: "outline" }}>
               Resume
             </Text>
           </Link>
@@ -78,6 +89,8 @@ const Navbar = () => {
           onClick={gitHub}
           width = "2em"
           height = "2em"
+          _hover={{ color: "magenta"}}
+          // _focus={{ boxShadow: "outline" }}
           />
 
           <Icon 
@@ -85,6 +98,7 @@ const Navbar = () => {
           onClick={linkedIn}
           width = "2em"
           height = "2em"
+          _hover={{ color: "magenta"}}
           />
       </Flex>
          

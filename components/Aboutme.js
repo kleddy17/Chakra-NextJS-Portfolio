@@ -5,7 +5,7 @@ const Aboutme = () => {
       <Center>
       <Flex>
           <Text
-          fontSize="1.5vw" 
+          fontSize="2em" 
           width="50%" 
           height = "50%"
           marginLeft="24vw"
