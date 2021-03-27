@@ -1,9 +1,8 @@
 import React from 'react'
 import { FaReact} from 'react-icons/fa';
-import {Flex, Icon, Box, Grid, GridItem, HStack, Center}  from "@chakra-ui/react";
+import {Flex, Icon, Box, Grid, GridItem, HStack, Center, Image, Text}  from "@chakra-ui/react";
 import { DiPostgresql, DiJavascript1, DiMongodb } from "react-icons/di";
 import {AiFillHtml5} from "react-icons/ai"
-
 
 
 
@@ -15,12 +14,18 @@ const Skills = () => {
         <Box 
         width="50%" 
         height="13vh" 
-        border = "2px solid red"
+        // border = "2px solid red"
         textAlign="center" 
-        fontSize = "2em"
-   
+        
         > 
-        Skills
+        <Text
+        as = "u"
+        color = "#EDF2F7"
+        fontSize = "4em"
+        fontWeight = "medium"
+        >
+        SKILLS
+        </Text>
         <Center>
        <HStack>
             <DiPostgresql
@@ -41,6 +46,15 @@ const Skills = () => {
             <AiFillHtml5
             size = {70}
             />
+
+            {/* <Image
+              w="18vw"
+              h="15vh"
+              borderRadius="16"
+              mt="0"
+              mb="-12"
+              src="./sequelize.png"
+            /> */}
         </HStack>
         </Center>
 

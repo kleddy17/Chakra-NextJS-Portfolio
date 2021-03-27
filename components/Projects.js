@@ -27,20 +27,20 @@ const Projects = ({children}) => {
         window.location = "http://findcareer.surge.sh/login"
       }
     return (
-   
-    // <Flex
-    // flexDirection = "column" 
-    // align = "flex-end"
-    // my= "38vh"
-    // align = "center" 
-    // h="auto"
-    // position="absolute"
-    // overflowX="scroll"
-    // top="0"
-    // right="0"
-
-    // >
+ 
     <Center>
+      <Box
+      textAlign = "center"
+      >
+      <Text
+        as = "u"
+        color = "#EDF2F7"
+        fontSize = "4em"
+        fontWeight = "medium"
+        
+        >
+        PROJECTS
+        </Text>
     <HStack>
 
         <Image
@@ -66,9 +66,9 @@ const Projects = ({children}) => {
         boxSize="150px"
         />
 
-        {/* // </Flex> */}
-
 </HStack>       
+
+</Box>
 </Center>
     )
 }

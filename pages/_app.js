@@ -9,7 +9,7 @@ config.autoAddCss = false
 const theme = extendTheme({
   fonts: {
     heading: 'Philosopheri',
-    body: 'Philosopher',
+    body: 'Philosopheri',
   },
 })
 

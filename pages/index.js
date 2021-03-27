@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Projects from '../components/Projects'
 import Header from '../components/Header'
 import Skills from '../components/Skills'
-import  Navbar  from "../components/Navbar";
+import Profilepic from "../components/Profilepic";
 import Aboutme from '../components/Aboutme'
 
 import {
@@ -40,9 +40,12 @@ export default function Index() {
     width = "100%"
     > 
       <Header/>
-       </Box>
+    </Box>
     
-  
+    <Box>
+      <Profilepic/>
+    </Box>
+    
    <Box
     height = "50%"
     width = "100%"
@@ -50,10 +53,14 @@ export default function Index() {
     <Aboutme/>
     </Box>
 
+
+
     <Box
      height = "50%"
      width = "100%"
     >
+
+
     <Projects/>
     </Box>
 
