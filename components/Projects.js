@@ -7,7 +7,8 @@ import {
     Image,
     VStack,
     HStack,
-    Text
+    Text,
+    Center
 } from "@chakra-ui/react"
 
 
@@ -27,19 +28,20 @@ const Projects = ({children}) => {
       }
     return (
    
-    <Flex
-    flexDirection = "column" 
-    align = "flex-end"
-    my= "38vh"
-    align = "center" 
-    
-    h="auto"
-    position="fixed"
-    overflowX="scroll"
-    top="0"
-    right="0"
+    // <Flex
+    // flexDirection = "column" 
+    // align = "flex-end"
+    // my= "38vh"
+    // align = "center" 
+    // h="auto"
+    // position="absolute"
+    // overflowX="scroll"
+    // top="0"
+    // right="0"
 
-    >
+    // >
+    <Center>
+    <HStack>
 
         <Image
         onClick={witchLink}
@@ -64,10 +66,10 @@ const Projects = ({children}) => {
         boxSize="150px"
         />
 
-        </Flex>
+        {/* // </Flex> */}
 
-       
-
+</HStack>       
+</Center>
     )
 }
 

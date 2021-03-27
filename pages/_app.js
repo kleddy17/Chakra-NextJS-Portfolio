@@ -1,5 +1,6 @@
 import { Box, ChakraProvider, extendTheme, ColorModeProvider } from '@chakra-ui/react';
 import { config } from '@fortawesome/fontawesome-svg-core'
+import  Navbar  from "../components/Navbar";
 // import '@fortawesome/fontawesome-svg-core/styles.css' 
 // Import the CSS
 config.autoAddCss = false
@@ -16,6 +17,7 @@ const theme = extendTheme({
 function MyApp({ Component, pageProps }) {
   return(
   <ChakraProvider theme={theme}>
+       <Navbar />
     <Box>
       <Component {...pageProps} />
     </Box>

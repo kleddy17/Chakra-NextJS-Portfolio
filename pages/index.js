@@ -7,7 +7,7 @@ import Aboutme from '../components/Aboutme'
 
 import {
   Box,
-  HStack,
+  VStack,
   useColorMode,
   Center,
   Flex,
@@ -33,18 +33,34 @@ export default function Index() {
   };
 
   return (
-    // <Box>
-    <Box
-    zIndex="-1"  bgPosition="center" bgSize="cover" minH="100%" minW="32vw" w="100vw" h="auto" position="fixed" overflowX="scroll" top="0" right="0"
-    bgImage= "url('./plant.jpg')"
+    <Box 
+    overflowX = "scroll"
+    h="200vh"
     >
-    <Navbar />
+
+<VStack>
+    <Box
+    bgPosition="center" 
+    bgSize="cover" 
+    w="100vw" 
+    minH="100%"
+    position="absolute"  
+    bgImage= "url('./plant.jpg')"
+    
+    
+    >
+    
     <Header/>
+    
     <Aboutme/>
-    <Skills/>
+ 
     <Projects/>
-     
+ 
+    <Skills/> 
+    
   </Box> 
-  // </Box>
+
+  </VStack> 
+   </Box>
   )
 }
