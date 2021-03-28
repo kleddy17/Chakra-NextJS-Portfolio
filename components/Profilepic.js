@@ -15,7 +15,7 @@ const Profilepic = () => {
             <Image
                 borderRadius="50vh"
                 // border= "2px solid red"
-                src="./mom.jpeg"
+                src="./portfoliopic.jpeg"
             />
 
         </Box>
