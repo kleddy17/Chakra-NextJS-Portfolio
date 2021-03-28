@@ -14,7 +14,7 @@ const Aboutme = () => {
           // fontWeight="semibold"
           >
 
-I am a full stack software developer that is always striving for my next challenge. Currently, I spend most of my time designing websites, furthering my educatioin in computer science, and bartending a few nights a week. When I'm not busy coding, you can find me spending time with my family and enjoying hobbies such as baking, snowboarding, and hiking. 
+I am a full stack software developer that is always striving for my next challenge. Currently, I spend most of my time designing websites, furthering my education in computer science, and bartending a few nights a week. When I'm not busy coding, you can find me spending time with my family and enjoying hobbies such as baking, snowboarding, and hiking. 
           </Text>
       </Flex>
       </Center>
