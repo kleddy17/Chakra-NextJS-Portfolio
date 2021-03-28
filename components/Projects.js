@@ -22,7 +22,7 @@ const Projects = ({children}) => {
       }
       
       const witchLink = () => {
-        window.location = "https://kleddy17.github.io/Project-1-/"
+        window.location = "https://github.com/kleddy17/Salem-Witch-Trivia.git"
       }
       
       const findCareerLink = () => {
