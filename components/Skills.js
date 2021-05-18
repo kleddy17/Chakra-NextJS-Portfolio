@@ -48,12 +48,12 @@ const Skills = () => {
             />
 
             {/* <Image
-              w="18vw"
-              h="15vh"
-              borderRadius="16"
-              mt="0"
-              mb="-12"
-              src="./sequelize.png"
+              w="100vw"
+              h="100vh"
+            //   borderRadius="16"
+            //   mt="0"
+            //   mb="-12"
+              src="./nextjs.png"
             /> */}
         </HStack>
         </Center>
