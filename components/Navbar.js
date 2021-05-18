@@ -64,7 +64,7 @@ const Navbar = () => {
       >
 
           <Link 
-            href="https://docs.google.com/document/d/1lG6vHZHxtiHYsi78aopAndQFZVytrZ2wILlZve75ZxA/edit?usp=sharing">
+            href="https://docs.google.com/document/d/1lG6vHZHxtiHYsi78aopAndQFZVytrZ2wILlZve75ZxA/edit">
               
             <Text
              size ="xl"
